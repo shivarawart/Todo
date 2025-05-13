@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { TodoProvider } from './context/Todo.Context.js'
 import TodoForm from './components/TodoForm.jsx'
 import TodoItem from './components/TodosItem.jsx'
+import GirlFriend from './components/GirlFriend.jsx' // Assuming this is the correct path for the GirlFriend component
 
 const App = () => {
   const [todos, setTodos] = useState([])
@@ -48,7 +49,11 @@ const App = () => {
                 <TodoItem todo={todo} />
               </div>
             ))}
+
           </div>
+            <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+            < GirlFriend />
+    </div>
         </div>
       </div>
     </TodoProvider>
